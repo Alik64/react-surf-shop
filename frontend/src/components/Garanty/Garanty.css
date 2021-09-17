@@ -1,0 +1,82 @@
+.garanty_wrapper {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.garanty_grid {
+  display: grid;
+  grid-template-areas: "a b c";
+  grid-gap: 2rem;
+  padding: 1rem;
+  width: 100%;
+  align-items: center;
+  justify-items: center;
+}
+
+.one {
+  grid-area: a;
+}
+.two {
+  grid-area: b;
+}
+.three {
+  grid-area: c;
+}
+.garanty_info {
+  text-align: center;
+}
+.garanty_grid {
+  margin: 0 1rem;
+}
+.box_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.box_item > * {
+  margin-bottom: 2rem;
+}
+.garanty_info p {
+  margin-bottom: 2rem;
+}
+.box_item a {
+  margin-top: 20px;
+  padding: 5px 10px;
+  color: #004aad;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.box_item a:hover {
+  color: rgb(39, 169, 173);
+}
+
+.grid_box {
+  border: 0.1rem #c0c0c0 solid;
+  border-radius: 0.5rem;
+  padding: 2rem 3rem;
+  background-color: #fff;
+}
+.item_icon i {
+  color: #004aad;
+  font-size: 5rem;
+  margin-top: 3rem;
+}
+@media screen and (max-width: 900px) {
+  .garanty_grid {
+    grid-template-areas:
+      "a a"
+      "b c";
+  }
+}
+@media screen and (max-width: 480px) {
+  .garanty_grid {
+    grid-template-areas:
+      "a"
+      "b"
+      "c";
+  }
+}

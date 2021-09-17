@@ -1,0 +1,13 @@
+/* Header */
+
+header a,
+li {
+  color: inherit;
+  margin: 0 10px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+}
